@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 matplotlib.use('Agg')
 
 from sklearn.linear_model import LinearRegression
-from PIL import Image
 pd.options.mode.chained_assignment = None  # default='warn'
 
 # Récupération du fichier
@@ -22,8 +21,8 @@ toto = pd.read_csv(link2)
 pred1 = pd.read_csv(link3)
 pred2 = pd.read_csv(link4)
 
-path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/logo.png"
-st.sidebar.image(Image.open(path), use_column_width=True)
+path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/logo.png"
+st.sidebar.image(path, use_column_width=True)
 
 st.markdown("<h1 style='text-align: center; color: grey;'>Save my election</h1>", unsafe_allow_html=True)
 
@@ -110,29 +109,29 @@ elif vue == 'national':
      title = "<h2 style='text-align: center; color: grey;'>Vainqueur départemental</h2></br><h3 style='text-align: center; color: grey;'> </br> Année "+str(annee)+" - "+tour_label+"</h3>"
      st.markdown(title, unsafe_allow_html=True)
      if (annee == 2002 and tour == 1) :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2002_1.jpeg"
-          st.image(Image.open(path), caption='2002 / 1er Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2002_1.jpeg"
+          st.image(path, caption='2002 / 1er Tour', use_column_width=True)
      elif annee == 2002 and tour == 2  :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2002_2.jpeg"
-          st.image(Image.open(path), caption='2002 / 2e Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2002_2.jpeg"
+          st.image(path, caption='2002 / 2e Tour', use_column_width=True)
      elif annee == 2007 and tour == 1:
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2007_1.jpeg"
-          st.image(Image.open(path), caption='2007 / 1er Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2007_1.jpeg"
+          st.image(path, caption='2007 / 1er Tour', use_column_width=True)
      elif annee == 2007 and tour == 2 :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2007_2.jpeg"
-          st.image(Image.open(path), caption='2007 / 2e Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2007_2.jpeg"
+          st.image(path, caption='2007 / 2e Tour', use_column_width=True)
      elif annee == 2012 and tour == 1 :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2012_1.jpeg"
-          st.image(Image.open(path), caption='2012 / 1er Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2012_1.jpeg"
+          st.image(path, caption='2012 / 1er Tour', use_column_width=True)
      elif annee == 2012 and tour == 2 :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2012_2.jpeg"
-          st.image(Image.open(path), caption='2012 / 2e Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2012_2.jpeg"
+          st.image(path, caption='2012 / 2e Tour', use_column_width=True)
      elif annee == 2017 and tour == 1  :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2017_1.jpeg"
-          st.image(Image.open(path), caption='2017 / 1er Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2017_1.jpeg"
+          st.image(path, caption='2017 / 1er Tour', use_column_width=True)
      elif annee == 2017 and tour == 2 :
-          path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/2017_2.jpeg"
-          st.image(Image.open(path), caption='2017 / 2e Tour', use_column_width=True)
+          path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/2017_2.jpeg"
+          st.image(path, caption='2017 / 2e Tour', use_column_width=True)
      #st.sidebar.image(Image.open(path), caption='2017 / 2e Tour', use_column_width=True)
 elif vue == 'prédictions':  
      pred1.set_index('Année', inplace=True)
@@ -156,10 +155,10 @@ else:
      title1 = "<h2 style='text-align: center; color: grey;'>Taux d'abstention national</h2>"
      
      st.markdown(title1, unsafe_allow_html=True)
-     path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/abstention.png"
-     st.image(Image.open(path), use_column_width=True)
+     path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/abstention.png"
+     st.image(path, use_column_width=True)
      
      title2 = "<h2 style='text-align: center; color: grey;'></br></br>Votes blancs ou nuls</h2>"
      st.markdown(title2, unsafe_allow_html=True)
-     path="/Users/coraliecoumes/desktop/hackaton1_WCS_app/images/blanc.png"
-     st.image(Image.open(path), use_column_width=True)
+     path="https://github.com/coraliecoumes/datathon-05-2020/blob/master/images/blanc.png"
+     st.image(path, use_column_width=True)
