@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run datathon-05-2020.py
